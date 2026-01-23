@@ -14,13 +14,18 @@ public class Main {
         Scanner input = new Scanner(System.in);
         level Level = new level();
         System.out.println("*******************Wel-Come****************");
+        String descrition = """ 
+                             The Game Rules Are Simple 
+                             You Have To Guess Number Between 1 To 100
+                                """;
+        System.out.println(descrition);
         while (true) {
             Level.level();
             int levelChoice = input.nextInt();
             switch (levelChoice) {
                 case 1:
-                    System.out.println("You Get Three Chances To Guess the Number ");
-                    for (int i = 0; i < 3; i++) {
+                    System.out.println("You Get Ten Chances To Guess the Number ");
+                    for (int i = 0; i < 10; i++) {
                         System.out.println("Enter Your Choice");
                         int choice = input.nextInt();
                         if (choice == Math.floor(random() * 100)) {
@@ -48,8 +53,8 @@ public class Main {
                     System.out.println("Better Luck Next Time");
                     break;
                 case 3:
-                    System.out.println("You Get Ten Chances To Guess the Number ");
-                    for (int i = 0; i < 10; i++) {
+                    System.out.println("You Get Three Chances To Guess the Number ");
+                    for (int i = 0; i < 3; i++) {
                         System.out.println("Enter Your Choice");
                         int choice = input.nextInt();
                         if (choice == Math.floor(random() * 100)) {

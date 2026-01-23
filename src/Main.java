@@ -14,11 +14,11 @@ public class Main {
         Scanner input = new Scanner(System.in);
         level Level = new level();
         System.out.println("*******************Wel-Come****************");
-        String descrpition = """ 
+        String description = """ 
                              The Game Rules Are Simple 
                              You Have To Guess Number Between 1 To 100
                                 """;
-        System.out.println(descrpition);
+        System.out.println(description);
         while (true) {
             Level.level();
             int levelChoice = input.nextInt();
@@ -31,7 +31,8 @@ public class Main {
                         int choice = input.nextInt();
                         if (choice == randomEasy) {
                             System.out.println("Correct Answer");
-                            break;
+                            System.out.println("Congratulations You Won");
+                            System.exit(0);
                         } else if (choice< randomEasy) {
                             System.out.println("The Number Is Lesser Than Your Guess");
                         } else if (choice > randomEasy) {
@@ -48,12 +49,17 @@ public class Main {
                     System.out.println("You Get Six Chances To Guess the Number ");
                     int randomMedium = Math.incrementExact((int) (random()*100));
                     for (int i = 0; i < 6; i++) {
-
                         System.out.println("Enter Your Choice");
                         int choice = input.nextInt();
                         if (choice == randomMedium) {
                             System.out.println("Correct Answer");
-                        } else {
+                            System.out.println("Congratulations You Won");
+                            System.exit(0);
+                        } else if (choice < randomMedium) {
+                            System.out.println("The Number Is Greater Than Your Guess ");
+                        }else if (choice > randomMedium){
+                            System.out.println("The Number Is Lesser Than Your Guess");
+                        }else {
                             System.out.println("Try Again");
                         }
 
@@ -70,7 +76,13 @@ public class Main {
                         int choice = input.nextInt();
                         if (choice == randomHard) {
                             System.out.println("Correct Answer");
-                        } else {
+                            System.out.println("Congratulations You Won");
+                            System.exit(0);
+                        } else if (choice < randomHard) {
+                            System.out.println("The Number Is Greater Than Your Guess ");
+                        }else if (choice > randomHard){
+                            System.out.println("The Number Is Lesser Than Your Guess");
+                        }else {
                             System.out.println("Try Again");
                         }
 

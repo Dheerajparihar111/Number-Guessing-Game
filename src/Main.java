@@ -13,21 +13,22 @@ public class Main {
     static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         level Level = new level();
-        System.out.println("*******************Wel-Come****************");
+        System.out.println("***Wel-Come To The Number Guessing Game!***");
         String description = """ 
-                             The Game Rules Are Simple 
-                             You Have To Guess Number Between 1 To 100
-                                """;
+                             I Am Thinking Number Between 1 To 100
+                             """;
         System.out.println(description);
         while (true) {
             Level.level();
+            System.out.print("Enter your Choice :");
             int levelChoice = input.nextInt();
             switch (levelChoice) {
                 case 1:
+                    System.out.println("Great! You Have Selected The Easy Difficulty level");
                     System.out.println("You Get Ten Chances To Guess the Number ");
                     int randomEasy = Math.incrementExact((int) (random()*100));
                     for (int i = 0; i < 10; i++) {
-                        System.out.println("Enter Your Guess");
+                        System.out.println("Enter Your Guess  ");
                         int choice = input.nextInt();
                         if (choice == randomEasy) {
                             System.out.println("Correct Answer");
@@ -48,6 +49,7 @@ public class Main {
                     System.out.println("Better Luck Next Time");
                     break;
                 case 2:
+                    System.out.println("Great! You Have Selected The Medium Difficulty level");
                     System.out.println("You Get Six Chances To Guess the Number ");
                     int randomMedium = Math.incrementExact((int) (random()*100));
                     for (int i = 0; i < 6; i++) {
@@ -72,6 +74,7 @@ public class Main {
                     System.out.println("Better Luck Next Time");
                     break;
                 case 3:
+                    System.out.println("Great! You Have Selected The Hard Difficulty level");
                     System.out.println("You Get Three Chances To Guess the Number ");
                     int randomHard = Math.incrementExact((int) (random()*100));
                     for (int i = 0; i < 3; i++) {

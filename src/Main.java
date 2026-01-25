@@ -34,9 +34,11 @@ public class Main {
                             System.out.println("Congratulations You Won");
                             System.exit(0);
                         } else if (choice< randomEasy) {
-                            System.out.println("The Number Is Lesser Than Your Guess");
-                        } else if (choice > randomEasy) {
                             System.out.println("The Number Is Greater Than Your Guess");
+                            System.out.println("Hint ="+(randomEasy-10)+"&"+(randomEasy+10)+"The number Is In Between ");
+                        } else if (choice > randomEasy) {
+                            System.out.println("The Number Is Lesser Than Your Guess");
+                            System.out.println("Hint ="+(randomEasy-10)+"&"+(randomEasy+10)+"The number Is In Between ");
                         } else {
                             System.out.println("Try Again");
                         }
@@ -57,8 +59,10 @@ public class Main {
                             System.exit(0);
                         } else if (choice < randomMedium) {
                             System.out.println("The Number Is Greater Than Your Guess ");
+                            System.out.println("Hint ="+(randomMedium-10)+"&"+(randomMedium+10)+"The number Is In Between ");
                         }else if (choice > randomMedium){
                             System.out.println("The Number Is Lesser Than Your Guess");
+                            System.out.println("Hint ="+(randomMedium-10)+"&"+(randomMedium+10)+"The number Is In Between ");
                         }else {
                             System.out.println("Try Again");
                         }

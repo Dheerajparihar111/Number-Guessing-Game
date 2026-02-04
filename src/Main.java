@@ -2,11 +2,12 @@ import java.util.*;
 import static java.lang.Math.*;
 class level{
     void level() {
-        System.out.println("Choose You Your Desired Level of Hardness of Game");
-        System.out.println("1)EASY(10)");
-        System.out.println("2)MEDIUM(6)");
-        System.out.println("3)HARD(3)");
-        System.out.println("4)EXIT");
+        System.out.println(" | Select Level of Difficulty |");
+        System.out.println(" | 1)EASY(10)                 |");
+        System.out.println(" | 2)MEDIUM(6)                |");
+        System.out.println(" | 3)HARD(3)                  |");
+        System.out.println(" | 4)EXIT                     |");
+        System.out.println(" ______________________________");
     }
 }
 public class Main {
@@ -17,7 +18,8 @@ public class Main {
         String description = """ 
                              I Am Thinking Number Between 1 To 100
                              """;
-        System.out.println(description);
+        System.out.print(description);
+        System.out.println("==============================================");
         while (true) {
             Level.level();
             System.out.print("Enter your Choice :");
@@ -36,10 +38,10 @@ public class Main {
                             System.exit(0);
                         } else if (choice< randomEasy) {
                             System.out.println("The Number Is Greater Than Your Guess");
-                            System.out.println("Hint ="+(randomEasy-10)+"&"+(randomEasy+10)+"The number Is In Between ");
+                            System.out.println("Hint ="+"The number Is In Between "+(randomEasy-10)+"&"+(randomEasy+10));
                         } else if (choice > randomEasy) {
                             System.out.println("The Number Is Lesser Than Your Guess");
-                            System.out.println("Hint ="+(randomEasy-10)+"&"+(randomEasy+10)+"The number Is In Between ");
+                            System.out.println("Hint ="+"The number Is In Between "+(randomEasy-10)+"&"+(randomEasy+10));
                         } else {
                             System.out.println("Try Again");
                         }
@@ -61,10 +63,10 @@ public class Main {
                             System.exit(0);
                         } else if (choice < randomMedium) {
                             System.out.println("The Number Is Greater Than Your Guess ");
-                            System.out.println("Hint ="+(randomMedium-10)+"&"+(randomMedium+10)+"The number Is In Between ");
+                            System.out.println("Hint ="+"The number Is In Between "+(randomMedium-10)+"&"+(randomMedium+10));
                         }else if (choice > randomMedium){
                             System.out.println("The Number Is Lesser Than Your Guess");
-                            System.out.println("Hint ="+(randomMedium-10)+"&"+(randomMedium+10)+"The number Is In Between ");
+                            System.out.println("Hint ="+"The number Is In Between "+(randomMedium-10)+"&"+(randomMedium+10));
                         }else {
                             System.out.println("Try Again");
                         }

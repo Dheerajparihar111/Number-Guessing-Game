@@ -74,9 +74,8 @@ The correct number is guessed, or
 All attempts are exhausted
 
 git clone https://github.com/Dheerajparihar111/Number-Guessing-Game.git
-out put image <p align="center">
-  <img src="src/images/Number-Guessing-Game output.png" width="600">
-</p>
+<img width="1885" height="1008" alt="Number-Guessing-Game output2" src="https://github.com/user-attachments/assets/7ad8279e-ce0a-423b-ba61-f344d5a2b7ae" />
+
 
 🚀 Future Enhancements
 
